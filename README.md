@@ -1,8 +1,13 @@
 # SQL-Query-Time-Predictor-AI
-This is a repository dedicated to a project to predict the execution time of SQL queries in a database using artificial intelligence (AI)
-## Creating a dataset (see the Creating_dataset file):
-1) Creating an EXTENDED_SQL_MONITORING table in the DBMS based on the V$SQL service table and the Scheduler task to collect statistics on the execution of SQL queries in the DBMS
-1) Creating a random sql query generator for the database
-2) Connecting to the database
-3) Running the query generator in the DBMS
-4) Collecting statistics from the EXTENDED_SQL_MONITORING table for further work with it
+Этот репозиторий, посвящен проекту по теме: "Прогнозирование времени выполнения SQL-запросов в базе данных с использованием нейронной сети".
+## Содержание проекта:
+- dataset:
+1) creating_dataset.ipynb - Cобственный генератор случайнных SQL запросов для демонстрационной базы данных
+2) data - Датасет
+- demonstration:
+1) presentation.pptx - Презентация к проекту
+2) video demonstration.rar - Архив с видео демонстрацией работы проекта
+- learning:
+1) learning.ipynb - Ноутбук с процессом подготовки данных и обучением модели
+2) checkpoint.pt/scaler.pkl - Сохраненная модель
+- streamlit - Проект для интеграции модели на платформу Streamlit
